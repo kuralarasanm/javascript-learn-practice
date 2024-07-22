@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #count {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Counter App</h1>
+  <div id="count">0</div>
+  <button id="addButton">Add</button>
+
+  <script>
+    // Function to log component lifecycle events
+    function logEvent(event) {
+      console.log(`Component ${event}`);
+    }
+
+    // Function to update the count
+    function updateCount() {
+      count++;
+      document.getElementById('count').innerText = count;
+    }
+
+    // Initial count value
+    let count = 0;
+
+    // Logging component mount event
+    document.addEventListener('DOMContentLoaded', () => {
+      logEvent('mounted');
+    });
+
+    // Adding event listener to the button
+    document.getElementById('addButton').addEventListener('click', () => {
+      updateCount();
+      logEvent('state changed');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 id="hh"></h1>I'm
+    <h1 class="multiText"></h1>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // let content=document.getElementById('hh')
+        // let type=()=>{
+        //     const name="kuralarasan"
+        //     let index=0;
+        //     let typeinterval=setInterval(() => {
+        //         content.textContent=name.slice(0,index)
+        //         index++
+        //         if(index>name.length){
+        //             clearInterval(typeinterval)
+        //             setTimeout(erase,2000)
+        //         }
+        //     }, 100);
+        // }
+        // let erase=()=>{
+        //     let name="kuralarasan"
+        //     let index=name.length;
+        //     let eraseinterval=setInterval(() => {
+        //         content.textContent=name.slice(0,index)
+        //         index--
+        //         if(index===0){
+        //             clearInterval(eraseinterval)
+        //             setTimeout(type,500)
+        //         }
+        //     }, 50);
+        // }
+        // type()
+
+        var typingeffect =new Typed(".multiText",{
+            strings :["coder","webdesigner","html,css,javaScript"],
+            loop : true,
+            typeSpeed : 200,
+            backSpeed : 80,
+            backDelay : 1500
+            
+        })
+    </script>
+    
+</body>
+
+</html>
